@@ -94,30 +94,78 @@
 
 
 	<!-- Start About Area -->
-	<section class="about-area section-gap-bottom">
-		<div class="container">
-			<div class="row align-items-center justify-content-center">
-				<div class="col-lg-7 col-md-12 about-left">
-					<img class="img-fluid" src="img/docker.png" alt="">
-				</div>
-				<div class="col-lg-5 col-md-12 about-right">
-					<div class="section-title text-left">
-						<h2>About Docker</h2>
+		<section class="whole-wrap">
+		<section class="container">
+			<div class="section-top-border">
+				<div class="row">
+					<div class="col-md-3">
+						<img src="img/docker.png" alt="" class="img-fluid">
 					</div>
-					<div>
-						<p>
-							Docker.....
+					<div class="col-md-9 mt-sm-20 left-align-p">
+						<p>Docker has the ability to package an application and its dependencies into a
+						virtual container that can run on any Linux, Windows, or MacOS computer. Docker can be used for
+							fast, consistent delivery of your applications, responsive deployment and scaling, and
+							running more workloads on the same hardware.
 						</p>
+						<p>See below for a brief description of the components of Docker and Docker tools.</p>
+									<div class="section-top-border">
+				<div class="row">
+											<div class="col-md-5 mt-sm-30 typo-sec">
+						<h4 class="mb-20">Components of Docker:</h4>
+						<div class="">
+							<ul class="unordered-list">
+								<li><b>Software</b>
+									<ul>
+										<li>The Docker daemon is called dockerd
+										</li>
+										<li>Manages Docker containers and handles container objects
+										</li>
+								</li>
+									</ul>
+								<li><b>Objects</b>
+									<ul>
+										<li>The main classes are images, containers, and services
+										</li>
+								</li>
+									</ul>
+								<li><b>Registries</b>
+									<ul>
+										<li>Repository for Docker images
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+											<div class="col-md-5 mt-sm-30 typo-sec">
+						<h4 class="mb-20">Docker Tools:</h4>
+						<div class="">
+							<ul class="unordered-list">
+								<li><b>Docker Compose</b>
+									<ul>
+										<li>Defines and runs multi-container Docker applications
+										</li>
+								</li>
+									</ul>
+								<li><b>Docker Swarm</b>
+									<ul>
+										<li>Provides clustering functionality for Docker containers
+										</li>
+										<li>Turns a group of Docker engines into a single Docker engine
+										</li>
+								</li>
+									</ul>
+							</ul>
+						</div>
+					</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
 	<!-- End About Area -->
 
 
 	<!-- Start top-category-widget Area -->
-	<section class="top-category-widget-area section-gap">
+	<section class="top-category-widget-area section-gap-bottom">
 		<p><h2>Click on a topic below to find out more information</h2></p>
 		<div class="container">
 			<div class="row">
@@ -127,12 +175,12 @@
 							<div class="overlay overlay-bg"></div>
 							<a href="virtualization.html" target="_blank">
 								<div class="thumb">
-									<img class="content-image img-fluid d-block mx-auto" src="img/blog/cat-widget1.jpg" alt="">
+									<img class="content-image img-fluid d-block mx-auto" src="img/tech.jpg" alt="">
 								</div>
 								<div class="content-details">
 									<h4 class="content-title mx-auto text-uppercase">Virtualization</h4>
 									<span></span>
-									<p></p>
+									<p>What is Virtualization?</p>
 								</div>
 							</a>
 						</div>
@@ -142,14 +190,14 @@
 					<div class="single-cat-widget">
 						<div class="content relative">
 							<div class="overlay overlay-bg"></div>
-							<a href="#" target="_blank">
+							<a href="containerization.html" target="_blank">
 								<div class="thumb">
-									<img class="content-image img-fluid d-block mx-auto" src="img/blog/cat-widget2.jpg" alt="">
+									<img class="content-image img-fluid d-block mx-auto" src="img/tech.jpg" alt="">
 								</div>
 								<div class="content-details">
 									<h4 class="content-title mx-auto text-uppercase">Containerization</h4>
 									<span></span>
-									<p>Be a part of politics</p>
+									<p>What is Containerization?</p>
 								</div>
 							</a>
 						</div>
@@ -159,12 +207,12 @@
 					<div class="single-cat-widget">
 						<div class="content relative">
 							<div class="overlay overlay-bg"></div>
-							<a href="#" target="_blank">
+							<a href="contvsvirt.html" target="_blank">
 								<div class="thumb">
-									<img class="content-image img-fluid d-block mx-auto" src="img/blog/cat-widget3.jpg" alt="">
+									<img class="content-image img-fluid d-block mx-auto" src="img/tech.jpg" alt="">
 								</div>
 								<div class="content-details">
-									<h4 class="content-title mx-auto text-uppercase">Virtualization vs. COntainerization</h4>
+									<h4 class="content-title mx-auto text-uppercase">Virtualization vs. Containerization</h4>
 									<span></span>
 									<p>How Do They Compare?</p>
 								</div>
@@ -172,9 +220,63 @@
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
 	</section>
+
+	<section class="top-category-widget-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="single-cat-widget">
+						<div class="content relative">
+							<div class="overlay overlay-bg"></div>
+							<a href="setupwebserver.html" target="_blank">
+								<div class="thumb">
+									<img class="content-image img-fluid d-block mx-auto" src="img/tech.jpg" alt="">
+								</div>
+								<div class="content-details">
+									<h4 class="content-title mx-auto text-uppercase">Tutorial</h4>
+									<span></span>
+									<p>How to Set-Up Web Server Using Docker</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="single-cat-widget">
+						<div class="content relative">
+							<div class="overlay overlay-bg"></div>
+							<a href="basiclinuxcommands.html" target="_blank">
+								<div class="thumb">
+									<img class="content-image img-fluid d-block mx-auto" src="img/tech.jpg" alt="">
+								</div>
+								<div class="content-details">
+									<h4 class="content-title mx-auto text-uppercase">Tutorial</h4>
+									<span></span>
+									<p>Basic Linux Commands</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="single-cat-widget">
+						<div class="content relative">
+							<div class="overlay overlay-bg"></div>
+							<a href="dockerpycharm.html" target="_blank">
+								<div class="thumb">
+									<img class="content-image img-fluid d-block mx-auto" src="img/tech.jpg" alt="">
+								</div>
+								<div class="content-details">
+									<h4 class="content-title mx-auto text-uppercase">Tutorial</h4>
+									<span></span>
+									<p>Connect Docker with Pycharm</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<br>
+				</div>
 	<!-- End top-category-widget Area -->
 
 
