@@ -82,103 +82,78 @@
 		<div class="container">
 			<div class="row justify-content-between align-items-center text-center banner-content">
 				<div class="col-lg-12">
-					<h1 class="text-white">Basic Linux Commands</h1>
-					<p>Linux commands are the essence of the entire Linux <br>operating system used to administer the
-					entire system</p>
+					<h1 class="text-white">Setting up a Web-Server with Docker</h1>
+					<p> Setup a sample webserver via docker</p>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- End top-section Area -->
 
-	<!-- Start Sample Area -->
-	<section class="sample-text-area">
+	<section class="whole-wrap">
 		<div class="container">
-			<p class="sample-text">
-			<table class="table table-striped">
+			<div class="section-top-border">
+				<h3 class="mb-30"></h3>
+				<div class="row">
+					<div class="col-md-3">
+					<img src="img/dockerwebpage.png" alt="" class="img-fluid">
+						<a href="https://www.docker.com/">Image Source</a>
+					</div>
+					<div class="col-md-9 mt-sm-20 left-align-p">
+						<p>
+						
+						</p>
+					</div>
+				</div>
+			</div>
+	
+	<!-- Start Sample Area -->
+	<section class="whole-wrap">
+		<div class="container">
+			<div class="section-top-border">
+				<h3 class="mb-30"></h3>
+				<div class="row">
+					<div class="col-md-3">
+					
+					</div>
+					<div class="col-md-9 mt-sm-20 left-align-p">
+						<p>These are command to be followed to setup a webserver using docker</p>
+					</div>
+					
+					<div class="container">
+						<p class="sample-text">
 
-  <tbody>
-    <tr>
-		<th scope="row">cat - used to list the contents of a file on the standard output </th>
-    </tr>
-    <tr>
-      <th scope="row">cd - used to go to a directory</th>
-    </tr>
-    <tr>
-      <th scope="row">clear - clears the terminal screen</th>
-    </tr>
-      <tr>
-      <th scope="row">cp - copy files through the command line</th>
-    </tr>
-      <tr>
-      <th scope="row">echo - used to display a text or a string to the standard output/file</th>
-    </tr>
-      <tr>
-      <th scope="row">find - searches for files and directories</th>
-    </tr>
-      <tr>
-      <th scope="row">grep - find text in a file</th>
-    </tr>
-        <tr>
-      <th scope="row">history - shows previously used commands</th>
-    </tr>
-      <tr>
-      <th scope="row">locate - used to locate a file in the Linux system (just like search command in Windows)</th>
-    </tr>
-      <tr>
-      <th scope="row">ls - tells you what files are in the directory you are in </th>
-    </tr>
-        <tr>
-      <th scope="row">man & —help - to know more about a command and how to use it</th>
-    </tr>
-      <tr>
-      <th scope="row">mkdir - creates a folder or directory, rmdir - delete an empty directory</th>
-    </tr>
-      <tr>
-      <th scope="row">mv - move files through the command line</th>
-    </tr>
-      </tr>
-      <tr>
-      <th scope="row">passwd - used to change the user account password </th>
-    </tr>
-      </tr>
-	      <tr>
-      <th scope="row">ping - used to test the reachability of a host on an IP network</th>
-    </tr>
-      </tr>
-      <tr>
-      <th scope="row">pwd - tells you which directory you are in and gives absolute path</th>
-    </tr>
-      </tr>
-      <tr>
-      <th scope="row">rm - delete files and directories</th>
-    </tr>
-      </tr>
-	      <tr>
-      <th scope="row">ssh - used to securely connect to a remote server/system</th>
-    </tr>
-      </tr>
-      <tr>
-      <th scope="row">su - changes the shell to be used as a super user until you used the exit commands</th>
-    </tr>
-      </tr>
-      <tr>
-      <th scope="row">sudo - to turn something as a super user</th>
-    </tr>
-      </tr>
-      <tr>
-      <th scope="row">touch - create a file</th>
-    </tr>
-      </tr>
-  </tbody>
-		</table>
-				<li><b>Step 1:</b> Install Docker <b> sudo apt install docker </b></li>
-				<li><b>Step 1b:</b> Install apache2 <b> sudo apt install apache2 </b></li>
-				<li><b>Step 1c:</b> Install vim <b> sudo apt install vim </b></li>
-				<li><b>Step 1d:</b> Install apache2-utils <b> sudo apt install apache2-utils </b></li>
+							
+						<li><b>Step 1:</b> Install Docker <b> sudo apt install docker </b></li>
+						<li> Install and run Docker in your computer </li>
+						<li> Key-step: After the installation, you can run “​docker run hello-world​” to test your installation </li>
+							
+						<li><b>Step 2:</b> Pull an Ubuntu image from Dockerhub. <b> docker pull ubuntu </b></li>
+						<li> Pull ubuntu and run it on your computer as a container. </li>
+						<li> Use “docker images” to check existing Docker images on your computer </li>
 
-				<li><b>Step 2:</b> Build Docker web server file<b> sudo docker build –t=”mywebserver” .  </b></li>
-				<li><b>Step 3:</b> Deploy Docker build file <b> sudo apt install vim </b></li>
+
+						<li><b>Step 3:</b> Install vim & apache2 <b> sudo apt install apache2 vim </b></li>
+						<li> Install vim & apache2 in your container </li>
+						<li> un the Ubuntu image to start a Docker container, then log into this Ubuntu container:
+Command: ​docker run -it ubuntu:latest /bin/bash </li> <li> Update system using“​apt-get update”​  </li>
+
+						<li><b>Step 4:</b> Share a directory between Docker and host. <b> docker run -it -v /a_absolute_local_directory:/a_directory_in_Docker_container container_name /bin/bash </b></li>
+						<li> This will save any data after you shutdown the container </li>
+
+						<li><b>Step 5:</b>Use vi to create and edit an index.html file in the shared directory. <b> vi index.html  </b></li>
+						<li> Use vi to create and edit a simple index.html file, then open it using your host browser </li>
+						<li> create an “index.html” file using “ vi index.html ”. Press “i” key to edit the new “index. Html” file. You can see “-- INSERT --” in the bottom of the command window, which means you can type html source code now. Try the shortcuts of vi to edit your file. </li>
+							
+						<li><b>Step 6:</b> use Docker to host a website. <b> /etc/init.d/apache2 restart </b></li>
+						<li> Using a browser of you host computer to access “127.0.0.1” </li>
+
+					</div>
+				</div>
+			</div>		
+			
+			
+	
 		</div>
 	</section>
 	<!-- End Sample Area -->
