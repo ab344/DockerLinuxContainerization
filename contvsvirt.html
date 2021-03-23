@@ -16,7 +16,7 @@
     <!-- meta character set -->
     <meta charset="UTF-8">
     <!-- Site Title -->
-    <title>Services</title>
+    <title>contvsvirt</title>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:400,500" rel="stylesheet">
     <!--
@@ -83,8 +83,7 @@
         <div class="container">
             <div class="row justify-content-between align-items-center text-center banner-content">
                 <div class="col-lg-12">
-                    <h1 class="text-white">How do containerization & virtualization compare?</h1>
-                    <p>To better Virtualization</p>
+                    <h1 class="text-white">How do Containerization & Virtualization Compare?</h1>
                 </div>
             </div>
         </div>
@@ -94,10 +93,9 @@
     <!-- Start Sample Area -->
     <section class="sample-text-area">
         <div class="container">
-            <h3 class="text-heading">What is compared?</h3>
+            <h3 class="text-heading">Containerization vs. Virtualization</h3>
             <p class="sample-text">
-            This is comparison of containerization and virtualization with a virtual machine. Running multiple virtual machinces from relatively powerful hardware is still a common sceneario when developing and deploying application. Digital workspaces both feature virtualization and containerization, and the idea is to make applications as readily available and scalable as possible for users. Traditional virtualization allows for full isolation of applications so that they run independently of each other using actual resources from the underlying infrastructure but containerization takes this idea to a new level seprating and make each container indepent and easily scalable.
-
+            This is a comparison of containerization and virtualization with a virtual machine. Running multiple virtual machines from relatively powerful hardware is still a common scenario when developing and deploying application. Digital workspaces feature both virtualization and containerization, and the idea is to make applications as readily available and scalable as possible for users. Traditional virtualization allows for full isolation of applications so that they run independently of each other using actual resources from the underlying infrastructure, but containerization takes this idea to a new level by separating and making each container independent and easily scalable.
             </p>
                                     <img src="img/Virtualization%20vs%20Containerization.png" alt="" class="img-fluid">
 
@@ -108,13 +106,13 @@
     <section class="whole-wrap">
         <div class="container">
             <div class="section-top-border text-left">
-                <h3 class="mb-30"> Virtualization Differences:</h3>
+                <h3 class="mb-30">Virtualization Differences:</h3>
                 <div class="row">
                     <div class="col-md-9">
                         <p class="text-right">
-                        <li><b>Hypervisor:</b>  specialized hardware, software or firmware for operating VMs on a host machine, like a server or laptop.</li>
-                        <li><b>hardware:</b> every VM is assigned not only the essential bins/libs, but also a virtualized.</li>
-                        <li><b>Guest Operating system:</b> VM requires a full-fledged guest operating system to run. The hypervisor might be ran from the host machine's OS or a bare-metal application.</li>
+                        <li><b>Hypervisor:</b> Specialized hardware, software or firmware for operating VMs on a host machine, like a server or laptop</li>
+                        <li><b>Hardware:</b> Every VM is assigned not only to the essential bins/libs, but also a virtualized hardware stack including CPUs, storage, and network adapters </li>
+                        <li><b>Guest Operating system:</b> VM requires a full-fledged guest operating system to run. The hypervisor might be ran from the host machine's OS or a bare-metal application</li>
                         </p>
                     </div>
                     <div class="col-md-3">
@@ -131,10 +129,10 @@
                         <div class="row">
                             <div class="col-md-9">
                                 <p class="text-right">
-                                <li><b>Virtualized kernels:</b> Containers uses virtual kernels to run. Every operating system uses the same kernel to run which is a security issue as a single vunerablity could affect many contrainers. </li>
-                                <li><b>Lack of Hypervisor :</b> Contrainers do not use a hypervisor hence less overhead for the container to run though, simplifying the process</li>
-                                <li><b>Flexability:</b> Containers can be deployed relativly quickly which is very diseriable for short term applications. Containers are small, fast, and portable because unlike a virtual machine, containers do not need to include a guest OS in every instance and can, instead, simply leverage the features and resources of the host OS. </li>
-                                <li><b>kubernetes:</b> Allows for automations, deployment, management and scaling of containers. </li>
+                                <li><b>Virtualized Kernels:</b> Containers use virtual kernels to run. Every operating system uses the same kernel to run, which is a security issue as a single vulnerability could affect many containers </li>
+                                <li><b>Lack of Hypervisor :</b> Containers do not use a hypervisor hence less overhead for the container to run though, simplifying the process</li>
+                                <li><b>Flexibility:</b> Containers can be deployed relatively quickly which is very desirable for short term applications. Containers are small, fast, and portable because unlike a virtual machine, containers do not need to include a guest OS in every instance and can, instead, simply leverage the features and resources of the host OS </li>
+                                <li><b>Kubernetes:</b> Allows for automations, deployment, management and scaling of containers. </li>
                                 </p>
                             </div>
                             <div class="col-md-3">

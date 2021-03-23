@@ -15,7 +15,7 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>Elements</title>
+	<title>setupwebbrwsr</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:400,500" rel="stylesheet">
 	<!--
@@ -83,71 +83,44 @@
 			<div class="row justify-content-between align-items-center text-center banner-content">
 				<div class="col-lg-12">
 					<h1 class="text-white">Setting up a Web-Server with Docker</h1>
-					<p> Setup a sample webserver via docker</p>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- End top-section Area -->
-
-	<section class="whole-wrap">
-		<div class="container">
-			<div class="section-top-border">
-				<h3 class="mb-30"></h3>
-				<div class="row">
-					<div class="col-md-3">
-					<img src="img/dockerwebpage.png" alt="" class="img-fluid">
-						<a href="https://www.docker.com/">Image Source</a>
-					</div>
-					<div class="col-md-9 mt-sm-20 left-align-p">
-						<p>
-						
-						</p>
-					</div>
-				</div>
-			</div>
 	
 	<!-- Start Sample Area -->
-	<section class="whole-wrap">
 		<div class="container">
-			<div class="section-top-border">
-				<h3 class="mb-30"></h3>
+			<div class="section-top-border text-left">
+				<h2 class="mb-30">Commands to Set-Up a WebServer using Docker:</h2>
 				<div class="row">
-					<div class="col-md-3">
-					
-					</div>
-					<div class="col-md-9 mt-sm-20 left-align-p">
-						<p>These are command to be followed to setup a webserver using docker</p>
-					</div>
-					
-					<div class="container">
-						<p class="sample-text">
-
-							
-						<li><b>Step 1:</b> Install Docker <b> sudo apt install docker </b></li>
-						<li> Install and run Docker in your computer </li>
+					<div class="col-md-12">
+						<p class="text-left">
+						<h3><b>Step 1</b></h3> <li>Install Docker <b> sudo apt install docker </b></li>
+						<li>Install and run Docker in your computer </li>
 						<li> Key-step: After the installation, you can run “​docker run hello-world​” to test your installation </li>
 							
-						<li><b>Step 2:</b> Pull an Ubuntu image from Dockerhub. <b> docker pull ubuntu </b></li>
+						<br><h3><b>Step 2</b></h3><li>Pull an Ubuntu image from Dockerhub. <b> docker pull ubuntu </b></li>
 						<li> Pull ubuntu and run it on your computer as a container. </li>
 						<li> Use “docker images” to check existing Docker images on your computer </li>
 
 
-						<li><b>Step 3:</b> Install vim & apache2 <b> sudo apt install apache2 vim </b></li>
+						<br><h3><b>Step 3</b></h3> <li>Install vim & apache2 <b> sudo apt install apache2 vim </b></li>
 						<li> Install vim & apache2 in your container </li>
 						<li> un the Ubuntu image to start a Docker container, then log into this Ubuntu container:
-Command: ​docker run -it ubuntu:latest /bin/bash </li> <li> Update system using“​apt-get update”​  </li>
+							Command: ​docker run -it ubuntu:latest /bin/bash </li>
+						<li> Update system using“​apt-get update”​  </li>
 
-						<li><b>Step 4:</b> Share a directory between Docker and host. <b> docker run -it -v /a_absolute_local_directory:/a_directory_in_Docker_container container_name /bin/bash </b></li>
+						<br><h3><b>Step 4</b></h3> <li>Share a directory between Docker and host. <b> docker run -it -v /a_absolute_local_directory:/a_directory_in_Docker_container container_name /bin/bash </b></li>
 						<li> This will save any data after you shutdown the container </li>
 
-						<li><b>Step 5:</b>Use vi to create and edit an index.html file in the shared directory. <b> vi index.html  </b></li>
+						<br><h3><b>Step 5</b></h3> <li>Use vi to create and edit an index.html file in the shared directory. <b> vi index.html  </b></li>
 						<li> Use vi to create and edit a simple index.html file, then open it using your host browser </li>
-						<li> create an “index.html” file using “ vi index.html ”. Press “i” key to edit the new “index. Html” file. You can see “-- INSERT --” in the bottom of the command window, which means you can type html source code now. Try the shortcuts of vi to edit your file. </li>
+						<li> Create an “index.html” file using “ vi index.html ”. Press “i” key to edit the new “index. Html” file. You can see “-- INSERT --” in the bottom of the command window, which means you can type html source code now. Try the shortcuts of vi to edit your file. </li>
 							
-						<li><b>Step 6:</b> use Docker to host a website. <b> /etc/init.d/apache2 restart </b></li>
+						<br><h3><b>Step 6</b></h3> <li>Use Docker to host a website. <b> /etc/init.d/apache2 restart </b></li>
 						<li> Using a browser of you host computer to access “127.0.0.1” </li>
-
+</p>
 					</div>
 				</div>
 			</div>		
